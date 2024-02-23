@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            opacity: 0;
+            animation: fadeInUp 1s 0.5s forwards;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.2em;
+            color: #ccc;
+            opacity: 0;
+            animation: fadeInUp 1s 1s forwards;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        img {
+            max-width: 18%;
+            height: auto;
+            border-radius: 50%;
+            opacity: 0;
+            animation: fadeIn 1s 1s forwards;
+        }
+
+        .bio {
+            margin-top: 20px;
+            text-align: justify;
+            line-height: 1.6;
+            opacity: 0;
+            animation: fadeInUp 1s 1.5s forwards;
+        }
+
+        .section-heading {
+            color: #333;
+            border-bottom: 2px solid #1a1a1a;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            opacity: 0;
+            animation: fadeInUp 1s 2s forwards;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills li {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            opacity: 0;
+            animation: fadeInUp 1s 2.5s forwards;
+        }
+
+        .projects .project {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0;
+            animation: fadeInUp 1s 3s forwards;
+        }
+
+        .projects h3 {
+            color: #1a1a1a;
+        }
+
+        .projects .project:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .projects img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .resume {
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeInUp 1s 3.5s forwards;
+        }
+        .resume a {
+            color: #1a1a1a;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .resume a:hover {
+            color: #333;
+        }
+        
+        
+        
+
+        .contact {
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeInUp 1s 4s forwards;
+        }
+
+        .contact p {
+            margin: 5px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #1a1a1a;
+            color: #fff;
+            opacity: 0;
+            animation: fadeInUp 1s 4.5s forwards;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Vishnu Vardhan Kothapalli</h1>
+        <p>Web Developer | Creative Thinker | Problem Solver</p>
+    </header>
+
+    <div class="container">
+        <section class="about">
+            <img align="right" src="passport.jpg" alt="Your Name">
+            <div class="bio">
+                <p>Hello, I'm Vishnu Vardhan Kothapalli. I'm a passionate web developer with a strong background in front-end
+                    development. I enjoy creating beautiful and functional websites that leave a positive impact on
+                    users.</p>
+                <p>With a keen eye for design and a commitment to writing clean, efficient code, I bring a unique blend
+                    of skills to any project. Let's build something amazing together!</p>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2 class="section-heading">Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Responsive Design</li>
+                <li>UI/UX Design</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </section>
+
+        <section class="projects">
+            <h2 class="section-heading">Projects</h2>
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio website showcasing my skills and projects. Built with HTML, CSS, and
+                    JavaScript.</p>
+            </div>
+            <div class="project">
+                <h3>E-commerce Website</h3>
+                <p>Developed a fully functional e-commerce website using React.js, integrating payment gateways and
+                    ensuring a seamless user experience.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+
+        <section class="resume">
+            <h2 class="section-heading">Resume</h2>
+            <p><a href="resume.pdf" target="_blank" rel="noopener noreferrer" download>Download Resume</a></p>
+        </section>
+
+        <section class="contact">
+            <h2 class="section-heading">Contact</h2>
+            <p>Email: vishnuvardhank.0504@gmail.com</p>
+            <p>Phone: 7386154884</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Vishnu Vardhan Kothapalli. All rights reserved. | <a href="mailto:your.email@example.com">Contact</a></p>
+        </footer>
+    </div>
+
+    <script>
+        // Your JavaScript code can go here if needed
+    </script>
+</body>
+
+</html>
+
